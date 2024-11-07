@@ -14,9 +14,7 @@ El repositorio contiene el siguiente archivo:
 ## Cómo ver la página
 
 Puedes visitar la página en el siguiente enlace:
-- [https://tu-usuario.github.io/mi-pagina-web](https://tu-usuario.github.io/mi-pagina-web)
-
-*Nota*: Cambia `tu-usuario` por tu nombre de usuario de GitHub y `mi-pagina-web` por el nombre de tu repositorio.
+[- [https://tu-usuario.github.io/mi-pagina-web](https://tu-usuario.github.io/mi-pagina-web)](https://github.com/SinMasGato/prestashop.git)
 
 ## Tecnologías usadas
 
