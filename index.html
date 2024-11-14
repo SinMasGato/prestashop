@@ -1,163 +1,636 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCT<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manual de Usuario: PrestaShop</title>
+    <title>Diseñando tu Tienda - Manual de Usuario</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap">
+    <link rel="icon" href="./img/manuals_26839.ico" type="image/x-icon">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f8f8f8;
+            font-family: 'Open Sans', Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
             color: #333;
-            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #0066cc;
+            color: #fff;
             padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
         h1, h2, h3, h4, h5 {
-            color: #0056b3;
+            color: #0066cc;
         }
-        nav {
-            background-color: #0056b3;
-            color: #fff;
-            padding: 10px;
-            margin-bottom: 20px;
-            border-radius: 5px;
+        h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
         }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin-right: 15px;
-            font-weight: bold;
+        h2 {
+            font-size: 22px;
+            margin-top: 30px;
         }
-        p {
+        h3 {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        h4, h5 {
+            font-size: 16px;
+            margin-top: 15px;
+        }
+        p, ul, ol {
             margin: 10px 0;
         }
-        ul {
-            margin: 10px 0;
+        ul, ol {
             padding-left: 20px;
         }
-        .note {
-            background-color: #ffffe0;
-            padding: 10px;
-            border-left: 4px solid #ffa500;
-            margin: 10px 0;
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Index */
+        .index {
+            background-color: #f0f4f8;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+        }
+        .index ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .index li {
+            margin-bottom: 10px;
+        }
+
+        /* Section */
+        .section {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .section:last-of-type {
+            border-bottom: none;
         }
         .highlight {
-            color: #ff4500;
+            background-color: #e6f7ff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            color: #0056a3;
             font-weight: bold;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #0066cc;
+            color: #555;
+        }
+
+        /* Button*/
+        .button {
+            display: inline-block;
+            background-color: #0066cc;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #004999;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <h1>Manual de Usuario: PrestaShop</h1>
-    
-    <!-- Índice de contenido -->
-    <nav>
-        <a href="#personalizando-tienda">Personalizando tu tienda</a>
-        <a href="#gestion-modulos">Gestión de Módulos</a>
-        <a href="#descubriendo-modulos">Descubriendo e Instalando Módulos</a>
-        <a href="#modulos-instalados">Gestión de Módulos Instalados</a>
-        <a href="#personalizacion-diseno">Personalización del Diseño</a>
-        <a href="#tema-logo">Gestión de Tema y Logo</a>
-    </nav>
+    <header>Personalizando tu Tienda: Manual de Usuario</header>
+    <link rel="icon" href="./img/manuals_26839.ico" type="image/x-icon">
+    <main>
+        <div class="index">
+            <h2>Índice Interactivo</h2>
+            <ul>
+                <li><a href="#intro">1. Introducción</a></li>
+                <li><a href="#mod">2. Gestión de tus Módulos</a></li>
+                <li><a href="#des">3. Personalización del Diseño de tu Tienda</a></li>
+                <li><a href="#desdet">4. Detalles de Personalización de Diseño</a></li>
+                <li><a href="#th">5. Gestión de Tema y Logo</a></li>
+                <li><a href="#pages">6. Páginas,Contenido Estático y Correo</a></li>
+                <li><a href="#modpos">7. Posiciones y Módulos</a></li>
+                <li><a href="#posfront">8. Posiciones en el Front Office</a></li>
+                <li><a href="#configimg">9. Configuración de Imágenes en PrestaShop</a></li>
+                <li><a href="#wid">10. Widgets en PrestaShop 1.7</a></li>
+            </ul>
+        </div>
 
-    <!-- Contenido -->
-    <h2 id="personalizando-tienda">Personalizando tu tienda</h2>
-    <p>A medida que tu tienda y tu negocio crecen, es esencial adaptar y escalar tu tienda online para satisfacer nuevas necesidades. Esto incluye añadir funcionalidades, explorar nuevos mercados y optimizar las operaciones.</p>
-    <ul>
-        <li><strong>Objetivos de la Personalización:</strong></li>
+    <div id="intro" class="section">
+        <h2>1. Introducción</h2>
+        <p>A medida que tu tienda y tu negocio evolucionan, querrás añadir nuevas funcionalidades o explorar nuevos mercados. Esta sección trata sobre cómo personalizar tu tienda para que se ajuste a las necesidades de tu negocio, incluyendo nuevos módulos, idiomas, métodos de pago, y más.</p>
+        <p><strong>Objetivos de la Personalización:</strong></p>
         <ul>
             <li>Adaptar tu tienda a las necesidades actuales.</li>
-            <li>Ampliar tu alcance con nuevos módulos, países, idiomas, métodos de pago o transportistas.</li>
+            <li>Ampliar tu alcance con nuevas funciones.</li>
         </ul>
-    </ul>
+    </div>
 
-    <h2 id="gestion-modulos">Gestión de Módulos</h2>
-    <p>PrestaShop incluye una serie de módulos que puedes instalar, desinstalar y configurar para personalizar tu tienda según tus necesidades específicas.</p>
-    <ul>
-        <li><strong>Flexibilidad Total:</strong> Puedes adaptar la tienda a tu visión sin limitaciones, siempre que encuentres el módulo adecuado.</li>
-        <li><strong>Evolución Continua:</strong> La sección de módulos del panel de administración se actualiza constantemente desde la versión 1.7.5.</li>
-    </ul>
+    <div id="mod" class="section">
+        <h2>2. Gestión de tus Módulos</h2>
+        <p>PrestaShop incluye una serie de módulos que puedes instalar, desinstalar y configurar para personalizar y mejorar tu tienda según tus necesidades específicas.</p>
+        <h3>Módulos y Servicios</h3>
+        <p>La página de Módulos y Servicios está organizada en tres pestañas para facilitar su gestión:</p>
+        <ul>
+            <img src="./img/mod.jpg" alt="Modulos y Servicios" width="500">
+            <li><strong>Selección:</strong> Descubre e instala nuevos módulos.</li>
+            
+            <li><strong>Módulos Instalados:</strong> Administra y configura tus módulos.</li>
+            <li><strong>Notificaciones:</strong> Revisa alertas importantes.</li>
+        </ul>
+        <h3>Descubriendo y Instalando Módulos</h3>
+        <h4>Manual de Usuario: Selección de Módulos en PrestaShop</h4>
+        <p>La sección Selección de Módulos permite encontrar e instalar nuevos módulos para mejorar tu tienda, ya sea al comenzar o al expandir tu negocio.</p>
+        <h4>¿Qué es un Módulo Incorporado?</h4>
+        <p>Los módulos incorporados están disponibles desde la configuración inicial de tu tienda. Algunos vienen preinstalados y son esenciales para el comercio electrónico.</p>
+        <h4>Instalación Manual de Módulos</h4>
+        <p><strong>Subida mediante el formulario:</strong></p>
+        <ul>
+            <li>Haz clic en "Subir un módulo" y selecciona el archivo comprimido (.zip o .tar.gz).</li>
+            <img src="./img/mod2.jpg" alt="Subir un Módulo" width="100">
+            <li>El sistema subirá el archivo, lo descomprimirá y lo instalará automáticamente.</li>
+            <li>Recibirás una confirmación: "¡Módulo instalado!".</li>
+        </ul>
+        <div id="mod" class="section">
+            <h2>2. Gestión de tus Módulos</h2>
+            <p>Gestión de Módulos
+                PrestaShop incluye una serie de módulos que puedes instalar, desinstalar y configurar para personalizar y completar tu tienda según tus necesidades específicas.
+                Flexibilidad Total: Puedes adaptar la tienda a tu visión sin limitaciones impuestas, siempre que encuentres el módulo adecuado.
+                Evolución Continua: La sección de módulos del panel de administración se está actualizando desde la versión 1.7.5. No te preocupes, las nuevas funciones seguirán siendo intuitivas y fáciles de usar.
+                Secciones Importantes:
+                
+                Módulos y Servicios
+                Catálogo de Módulos
+                Nota: Espera más detalles cuando las actualizaciones estén completamente implementadas.</p>
+                <img src="./img/mod3.png" alt="" width="600">
+                <h3>Módulos y Servicios</h3>
+                <p>
+                    La página de Módulos y Servicios en PrestaShop 1.7 está organizada en tres pestañas para facilitar la gestión de tus módulos:
+                    
+                    <p>Selección: Descubre e instala nuevos módulos para mejorar tu tienda, ideal para cuando estás iniciando o expandiéndote.</p>
+                    Módulos Instalados: Administra y configura tus módulos diariamente.
+                    Notificaciones: Revisa alertas importantes sobre módulos que requieren actualizaciones o ajustes para un funcionamiento óptimo.
+                    Funcionalidades Clave
+                    Conexión a Addons: Accede a módulos adicionales desde la plataforma oficial.
+                    Subir un módulo: Carga y gestiona módulos personalizados fácilmente</p>
+        
+        
+                   <p> <b>Se divide en tres pestañas:</b></p>
+                    <p>modulos de selecion</p><br>
+                    <img src="./img/mod4.png" alt="" width="600">
 
-    <h3>Módulos y Servicios</h3>
-    <p>La página de Módulos y Servicios en PrestaShop 1.7 está organizada en tres pestañas para facilitar la gestión de tus módulos:</p>
-    <ul>
-        <li><strong>Selección:</strong> Descubre e instala nuevos módulos para mejorar tu tienda.</li>
-        <li><strong>Módulos Instalados:</strong> Administra y configura tus módulos diariamente.</li>
-        <li><strong>Notificaciones:</strong> Revisa alertas importantes sobre módulos que requieren actualizaciones.</li>
-    </ul>
+                    <p>modulos instalados</p><br>
+                    <img src="./img/mod5.png" alt="" width="600">
 
-    <h3 id="descubriendo-modulos">Descubriendo e Instalando Módulos</h3>
-    <h4>Manual de Usuario: Selección de Módulos</h4>
-    <p>La sección Selección de Módulos te permite encontrar e instalar nuevos módulos para mejorar tu tienda, ya sea al comenzar o al expandir tu negocio.</p>
-    
-    <h4>Explicación: Módulos y Servicios</h4>
-    <ul>
-        <li><strong>Módulos:</strong> Añaden funciones a tu tienda, como métodos de pago o herramientas de exportación.</li>
-        <li><strong>Servicios:</strong> Intangibles que no requieren instalación directa, como acuerdos con proveedores externos.</li>
-    </ul>
+                     <p>modulos notificaciones</p><br>
+                     <img src="./img/mod6.png" alt="Subir un Módulo" width="600">
 
-    <h4>¿Qué es un Módulo Incorporado?</h4>
-    <p>Los módulos incorporados están disponibles desde la configuración inicial de tu tienda. Son gratuitos y esenciales para el comercio electrónico.</p>
+        
+        
+        
+                    <h3>Descubriendo y Instalando Módulos</h3>
+                    <h5>Manual de Usuario: Selección de Módulos en PrestaShop</h5>
+                    <p>La sección Selección de Módulos te permite encontrar e instalar nuevos módulos para mejorar tu tienda, ya sea al comenzar o al expandir tu negocio.</p><br>
+                    
+                    <h4>Explicación: Módulos y Servicios
+                    </h4>
+                    <p>Módulos: Añaden funciones a tu tienda, como métodos de pago, sincronización de inventario, o herramientas de exportación. Se deben instalar manualmente en tu tienda a partir de un archivo descargado.</p>
+                    <p>Servicios: Son intangibles y no requieren instalación directa. Por lo general, implican un acuerdo o contrato con un proveedor externo.</p><br>
+                    
+                    <h4>¿Qué es un Módulo Incorporado?</h4>
+                    <p>Los módulos incorporados están disponibles desde la configuración inicial de tu tienda. Algunos ya vienen preinstalados para garantizar el funcionamiento básico y puedes optar por usarlos o no según tus necesidades. Son gratuitos y esenciales para el comercio electrónico.</p><br>
+        
+                    <h4>Instalación Manual de Módulos</h4>
+                    <p><b>Subida mediante el formulario:</p></b>
+                    <p>Haz clic en "Subir un módulo" en la parte superior de la página.
+                        Se abrirá una ventana emergente donde puedes cargar el archivo comprimido del módulo (formatos aceptados: .zip o .tar.gz).
+                        Arrastra el archivo aquí o selecciona el archivo descargado mediante el botón "seleccionar archivo". Importante: No cargues carpetas descomprimidas, solo el archivo comprimido.</p>
+                        <img src="./img/mod7.png" alt="" width="600">
+                        <p><b>Proceso de Instalación:</b></p>
+                        <p>Una vez detectado el archivo, la instalación comienza automáticamente.
+                            El sistema subirá el archivo, lo descomprimirá, ubicará los archivos correctamente y actualizará la página.
+                            Aparecerá un mensaje confirmando: "¡Módulo instalado!".
+                            Con esta guía, podrás personalizar tu tienda de forma rápida y eficiente.</p>
+                            <h5>Manual de Usuario: Gestión de Módulos en PrestaShop</h5>
+                    
+                            <h3>Gestión de Módulos</h3>
+                            <p>PrestaShop incluye una serie de módulos que puedes instalar, desinstalar y configurar para personalizar y completar tu tienda según tus necesidades específicas.
+        
+                                <p><b>Flexibilidad Total:</b> Puedes adaptar la tienda a tu visión sin limitaciones impuestas, siempre que encuentres el módulo adecuado.</p>
+                                <p><b>Evolución Continua:</b> La sección de módulos del panel de administración se está actualizando desde la versión 1.7.5. No te preocupes, las nuevas funciones seguirán siendo intuitivas y fáciles de usar.</p><br>
+                                <h5>Manual de Usuario: Gestión de Módulos Instalados en PrestaShop</h5>
+                    <h4>Página de Módulos Instalados</h4>
+                    <p>Aquí puedes instalar, desinstalar, configurar y actualizar los módulos de tu tienda. La pestaña "Módulos Instalados" facilita la gestión diaria de estos.</p><br>
+        
+        
+                    <h4>Secciones de la Lista de Módulos</h4>
+                    <p>Módulos Instalados: Módulos que has añadido, comprados en PrestaShop Addons o cargados manualmente.</p>
+                    <p>Módulos Incorporados: Módulos básicos y gratuitos que vienen preinstalados con tu tienda.</p>
+                    <p>Módulos del Tema: Módulos asociados a los temas que hayas instalado.</p><br>
+                    <img src="./img/mod8.png" alt="" width="600">
+                    <h4>Opciones de Búsqueda y Filtros:</h4>
+                    <p><b>Campo de búsqueda:</b> Busca módulos por nombre, autor o palabras clave.</p>
+                    <p><b>Ordenar:</b> La lista se actualiza automáticamente al aplicar filtros.</p>
+                    <p>Categorías: Muestra módulos según la categoría seleccionada.</p>
 
-    <h4>Instalación Manual de Módulos</h4>
-    <p><span class="highlight">Subida mediante el formulario:</span> Haz clic en "Subir un módulo" y selecciona el archivo comprimido del módulo (.zip o .tar.gz). Importante: No cargues carpetas descomprimidas.</p>
-    <p><strong>Proceso de Instalación:</strong> La instalación comienza automáticamente al detectar el archivo, y un mensaje confirmará: "¡Módulo instalado!"</p>
+                    <p>Mostrar todos los módulos: Filtra entre módulos habilitados y deshabilitados.</p>
+                    <p>Instalados y No Instalados: Encuentra módulos según su estado.</p>
+                    <p>Último acceso: Localiza rápidamente los módulos usados recientemente.</p>
+                    <p>Nombre: Ordena alfabéticamente de A a Z.</p><br>
+                    
+                    
+                    
+                    <h3>Estado de los Módulos </h3>
+                    <p>1. No instalado</p>
+                    <p>2. Instalado pero desabilitado</p>
+                    <p>3. Instalado y habiliado</p>
+                    <p>4. Instalado y habilitado, pero con advertencias</p><br>
+        
+        
+        
+        
+                    <h3>Deshabilitar vs Desintalar</h3>
+                    <p><b>Deshabilitar:</b>Mantiene la configuración del módulo para una futura reactivación.</p>
+                    <p><b>Desintalar:</b>Elimina la configuración y los datos del módulo, borrando todos sus archivos. Úsalo solo si no necesitas conservar la información.</p>
+                    <p><b>Importante;</b>Desinstala un módulo solo si estas seguro de que no lo necesitaras nuevamente.</p><br>
+        
+                    <h4>Acciones disponibles</h4>
+                    <h5><b>Para Módulos  No instalados</b></h5>
+                    <p><b></b>Instalar:</b> Añade y habilita automáticamente el módulo</p>
+                    <h5>Para Módulos Instalados:</h5>
+                    <p>Actualizar: PrestaShop buscará actualizaciones y las instalará.</p>
+                    <p>Habilitar: Activa el módulo deshabilitado.</p>
+                    <p>Habilitar en móvil: Permite que el módulo funcione solo en dispositivos móviles.</p>
+                    <p>Configurar: Accede a las opciones de configuración del módulo.</p>
+                    <p>Deshabilitar: Desactiva el módulo sin perder su configuración.</p>
+                    <p>Deshabilitar en móvil: Desactiva el módulo en dispositivos móviles.</p>
+                    <p>Restablecer: Devuelve el módulo a su configuración predeterminada.</p>
+                    <p>Desinstalar: Desactiva y puede eliminar todos los archivos y datos si se elige "Eliminar carpeta del módulo tras desinstalar".</p><br>
+        
+                    
+                    <h4>Desintalación Correcta de  Módulos</h4>
+                    <p><b>Nunca elimines un módulo directamente desde su carpeta usando un cliente FTP. Usa las opciones de PrestaShop para gestionarlo.</b></p>
+                    <p>Deshabilitar:<b></b>Útil si deseas pausar temporalmente el módulo manteniendo su configuración.</p>
+                    <p>Desinstalar:<b></b>El módulo queda sin impacto, pero su carpeta permanece en el servidor.</p>
+                    <p><b>Eliminar:</b>Borra completamente la carpeta y archivos del módulo de tu servidor.</p>
+                    <p><b>Precaución:</b>Asegúrate de que deshabilitar o eliminar un módulo no afecte el diseño o funcionalidad de tu tema.</p><br>
+                    <a href="https://www.youtube.com/watch?v=MAnVOX2BVWM" target="_blank">Ver tutorial de manejor de Módulos</a>
+        </div>
+        
+        <div id="desdet" class="section">
+            <h5>Manual de Usuario: Personalización del Diseño de tu Tienda en PrestaShop</h5>
+            <h2>7. Detalles de Personalización de Diseño</h2>
+            <h3>Secciones de Personalización</h3>
+            <p><b>1. Tema y Logo:</b> Configura el aspecto visual de tu tienda, eligiendo temas que representen tu marca y ajustando tu logotipo.</p>
+            <p><b>2. Catálogo de Temas:</b> Explora y selecciona nuevos temas para renovar el diseño de tu tienda.</p>
+            <p><b>3. Tema de Correo Electrónico:</b> Personaliza los correos electrónicos automáticos que reciben tus clientes, asegurando coherencia visual con tu tienda.</p>
+            <p><b>4. Páginas - Gestión de Contenido Estático:</b> Administra y edita el contenido estático, como páginas de información o términos y condiciones.</p>
+            <p><b>5. Posiciones:</b> Configura la posición de los módulos para optimizar la disposición y el diseño general.</p>
+            <p><b>6. Configuración de Imágenes:</b> Ajusta los tamaños y formatos de las imágenes para garantizar una mejor presentación visual.</p>
+            <p><b>7. Widget de Enlaces:</b> Crea y administra widgets de enlaces personalizados para facilitar la navegación de los usuarios.</p>
+            <p><b>NOTA:</b> Con estas herramientas, puedes ajustar todos los aspectos visuales y de contenido para ofrecer una experiencia de compra atractiva y consistente.</p>
+        </div>
+        
+        <div id="th" class="section">
+            <h5>Manual de Usuario: Personalización de Tema y Logo en PrestaShop</h5>
+            <h2>8. Gestión de Tema y Logo</h2>
+            <p>En la página de <b>"Tema y Logo"</b> puedes administrar de manera eficiente tus temas y actualizar el logotipo de tu tienda.</p>
+            <h4>Soporte para Idiomas de Escritura de Derecha a Izquierda (RTL)</h4>
+            <p>PrestaShop admite idiomas que se escriben de derecha a izquierda, como árabe, hebreo y persa.</p>
+            <img src="./img/th3.png" alt="" width="600">
+            <h4>Personalización de Logos</h4>
+            <p>Puedes modificar diferentes logos de tu tienda:</p>
+            <p><b>1. Logo de Encabezado:</b> Visible en todas las páginas de tu tienda.</p>
+            <p><b>2. Logos de Factura y Correo Electrónico:</b> Aparecen en notificaciones de correo y facturas.</p>
+            <p><b>Favicon:</b> Pequeño icono mostrado en la barra de direcciones del navegador.</p>
+            <img src="./img/th1.png" alt="" width="600">
+            <p><b>NOTA:</b> En modo multitienda, puedes aplicar cambios a todas las tiendas o a grupos específicos.</p>
 
-    <h2 id="modulos-instalados">Gestión de Módulos Instalados</h2>
-    <h4>Página de Módulos Instalados</h4>
-    <p>Aquí puedes instalar, desinstalar, configurar y actualizar los módulos de tu tienda. La pestaña "Módulos Instalados" facilita la gestión diaria.</p>
 
-    <h4>Secciones de la Lista de Módulos</h4>
-    <ul>
-        <li>Módulos Instalados: Añadidos y gestionados en tu tienda.</li>
-        <li>Módulos Incorporados: Preinstalados y básicos para el funcionamiento.</li>
-        <li>Módulos del Tema: Asociados a los temas que hayas instalado.</li>
-    </ul>
+            <p>Puedes modificar diferentes logos de tu tienda:</p>
+            <p><b>1.Logo de Encabezado:</b>Visible en todas las páginas de tu tienda.</p>
+            <p><b>2.Logos de Factura y Correo Electrónico:</b>Aparecen en notificaciones de correo y facturas.</p>
+            <p><b>Favicon:</b>Pequeño icono mostrado en la barra de direcciones del navegador. Es recomendable cambiar el favicon predeterminado por el tuyo propio.</p>
+            <p><b>NOTA:</b>En modo multitienda, puedes aplicar cambios a todas las tiendas o a grupos específicos.</p><br>
 
-    <h4>Opciones de Búsqueda y Filtros</h4>
-    <p><strong>Campo de búsqueda:</strong> Encuentra módulos por nombre o palabras clave.</p>
-    <p><strong>Ordenar:</strong> Actualiza automáticamente la lista al aplicar filtros.</p>
+            <h4>Detalles de Tu Tema Actual</h4>
+            <p>Sección informativa que muestra:
+            
+                Nombre y versión del tema.
+                Autor del tema.
+                Vista previa del tema.</p>
+                <img src="./img/th2.png" alt="" width="600">
+            <h4>Configuración de Diseño de Páginas</h4>
+            <p>Puedes personalizar la estructura de las páginas según las opciones de tu tema:</p>
+            <p><b>Sin columnas:</b>Diseño de pantalla completa para páginas sin distracciones.</p>
+            <p><b>Tres columnas:</b>Columna central grande con dos columnas laterales.</p>
+            <p><b>Dos columnas con columna pequeña izquierda o derecha:</b>Diseño más versátil.</p>
+            <p>Para ajustar un diseño, selecciona "Elegir diseños", realiza los cambios y haz clic en "Guardar". Para revertir los cambios, presiona "Restablecer a los valores predeterminados".</p><br>
+            <img src="./img/th6.png" alt="" width="600">
+            <h4>Seleccionar un Tema</h4>
+            <p>Si tienes varios temas instalados, puedes ver y gestionar los temas disponibles. Opciones:</p>
+            <p><b>Usar este tema:</b>Cambia al tema seleccionado.</p>
+            <p><b>Cambia al tema seleccionado.</b>Borra los archivos del tema del servidor.</p>
+            <p><b>NOTA:</b>En modo multitienda, debes elegir un tema por tienda individualmente.</p><br>
 
-    <h3 id="personalizacion-diseno">Personalización del Diseño de tu Tienda</h3>
-    <p>El diseño de tu tienda online define la identidad de tu marca y mejora la experiencia de tus clientes.</p>
-    <h3>Secciones de Personalización</h3>
-    <ul>
-        <li><strong>Tema y Logo:</strong> Configura el aspecto visual de tu tienda.</li>
-        <li><strong>Catálogo de Temas:</strong> Explora y selecciona nuevos temas.</li>
-        <li><strong>Tema de Correo Electrónico:</strong> Personaliza los correos electrónicos automáticos.</li>
-        <li><strong>Páginas - Gestión de Contenido:</strong> Administra el contenido estático de tu tienda.</li>
-        <li><strong>Posiciones:</strong> Configura la posición de los módulos.</li>
-    </ul>
+            <h4>Agrega un Tema</h4>
+            <p>Haz clic en "Agregar nuevo tema" y elige uno de estos métodos:</p>
+            <p><b>Desde tu computadora:</b>Carga un archivo zip</p>
+            <p><b>Desde la web</b>Proporciona una URL directa al archivo Zip.</p>
+            <p><b>Desde FTP:</b>Sube el archivo a la carpeta /themes/ mediante un cliente FTP.</p>
+            <p>Haz clic en "Guardar" para instalar el tema. Una página de confirmación mostrará los cambios aplicados.</p><br>
+            <img src="./img/th4.png" alt="" width="600">
 
-    <h5 id="tema-logo">Gestión de Tema y Logo</h5>
-    <p>En la página de <strong>"Tema y Logo"</strong> puedes administrar tus temas y actualizar el logotipo de tu tienda.</p>
+            <h4>Exportar un Tema</h4>
+            <p>Esta función permite crear un archivo Zip del tema actual, incluyendo módulos personalizados. Haz clic en "Exportar tema actual" y guarda el archivo para realizar copias de seguridad o compartirlo.</p><br>
+            <img src="./img/th5.png" alt="" width="150">
+            <h4>Configuración de Páginas</h4>
+            <p>El módulo <b>"Personalización de Temas"</b> permite modificar fácilmente páginas como la página de inicio, categorías y productos. Selecciona la parte a modificar para ver los módulos relacionados y configúralos según tus necesidades.</p><br>
 
-    <h4>Soporte para Idiomas RTL</h4>
-    <p>PrestaShop admite idiomas que se escriben de derecha a izquierda, como árabe y hebreo.</p>
+            <h4>Personalización Avanzada: Temas Padre e Hijo</h4>
+            <p>PrestaShop 1.7 introduce los <b>temas hijo</b> para realizar modificaciones sin afectar las actualizaciones del tema principal. Configura un tema hijo en la carpeta /themes y define el tema padre en el archivo theme.yml.
 
-    <h4>Personalización de Logos</h4>
-    <p>Puedes modificar diferentes logos de tu tienda:</p>
-    <ul>
-        <li><strong>Logo de Encabezado:</strong> Visible en todas las páginas de tu tienda.</li>
-        <li><strong>Logos de Factura y Correo:</strong> Aparecen en notificaciones y facturas.</li>
-        <li><strong>Favicon:</strong> Pequeño icono en la barra de direcciones del navegador.</li>
-    </ul>
+                <a href="https://devdocs.prestashop.com/1.7/themes/reference/template-inheritance/parent-child-feature/"target="_blank">Para más detalles técnicos, consulta la documentación para desarrolladores.</p><br>
+                </a>
+                <h4>Crear un Tema Hijo</h4>
+                <img src="./img/th7.png" alt="" width="600">
+                <p>1.Asegúrate de que el tema principal esté en la carpeta /themes.</p>
+                <p>2.Crea una carpeta nueva con archivos mínimos copiados del tema padre.</p>
+                <p>3.Configura el archivo theme.yml para especificar el tema padre.</p>
+                <img src="./img/th8.png" alt="" width="600">
+                <p>¡Ahora puedes personalizar tu tienda con seguridad y flexibilidad!</p>
 
-    <h4>Detalles de Tu Tema Actual</h4>
-    <p>Muestra el nombre, versión y autor del tema, junto con una vista previa.</p>
+            <h3>Cátalogo de temas</h3>
+            <p>Si deseas un nuevo diseño para tu tienda, visita <b>PrestaShop Addons</b>, el mercado oficial para temas y módulos de PrestaShop. Aquí puedes explorar los diseños más populares y encontrar inspiración para mejorar el aspecto de tu tienda.</p>
+            <img src="./img/th9.png" alt="" width="600">
+            <h4>Navegar y Descubrir Temas</h4>
+            <p><b>Explorar temas:</b>Recorre los temas destacados directamente desde la página de Catálogo de Temas.</p>
+            <p><b>Descubrir más:</b>Haz clic en "Descubre todos los temas" para acceder a la selección completa de temas en PrestaShop Addons.</p>
+            <p><b>Ver detalles:</b>Al seleccionar "Descubrir" en un tema específico, serás redirigido a la página de PrestaShop Addons con más información y características sobre ese tema.</p><br>
 
-    <h4>Configuración de Diseño de Páginas</h4>
-    <p>Puedes personalizar la estructura de las páginas de tu tienda seleccionando entre varios diseños.</p>
+            <h4>Búsqueda de Temas</h4>
+            <p>Utiliza la <b>barra de búsqueda</b> en la parte inferior de la página para encontrar rápidamente un tema que se ajuste a las necesidades de tu tienda.
 
-    <h4>Seleccionar un Tema</h4>
-    <p>Gestiona los temas disponibles y elige el más adecuado para tu tienda.</p>
+                ¡Explora y selecciona el mejor diseño para destacar tu tienda online!</p><br>
 
-    <h4>Agregar y Exportar un Tema</h4>
-    <p>Carga nuevos temas desde tu computadora, web o mediante FTP. Usa "Exportar tema actual" para crear un archivo de respaldo.</p>
+        </div>
+        
+        <div id="pages" class="section">
+            <h5>Guía de Usuario: Gestión de Temas de Correo y Contenido Estático en PrestaShop</h5>
+            <h2>9. Páginas,Contenido Estático y Correo</h2>
+            <h3>Gestión de Contenido Estático</h3>
+            <p>PrestaShop permite crear páginas de contenido estático de manera sencilla, similar a las páginas de productos. Puedes agregar estas páginas al menú superior con el módulo "Menú principal" o en cualquier lugar con el módulo "Link Widget".</p>
+            <h4>Crear Categorías de Páginas</h4>
+            <p>Haz clic en "Añadir nueva categoría de página" para crear una subcategoría de la raíz "Inicio".</p>
+            <img src="./img/pg1.png" alt="" width="600">
+            <p>Haz clic en "Añadir nueva categoría de página" para crear una subcategoría de la raíz "Inicio".
 
-    <h4>Personalización Avanzada de Temas</h4>
-    <p>Haz clic en "Personalizar" para cambiar ajustes adicionales o usa las plantillas de correo electrónico para más opciones.</p>
+
+                Rellena el formulario con los siguientes campos:
+                
+                Nombre: Usa un nombre breve y claro.
+                Mostrado: Define si la categoría será visible al público.
+                Categoría principal: Selecciona "Inicio" u otra categoría padre.
+                Descripción: Completa este campo en todos los idiomas soportados.
+                Meta título, descripción y palabras clave: Optimiza estos campos para motores de búsqueda.
+                URL amigable: Facilita la indexación y comprensión del contenido.
+                Al guardar, regresarás a la vista de tablas con la nueva categoría seleccionada.</p>
+            <img src="./img/pg2.png" alt="" width="600">
+            <h4>Crear Páginas Nuevas</h4>
+            <p>Desde la versión 1.7.6, disfruta de una vista previa dinámica de los resultados en motores de búsqueda al crear una página.
+                Para crear subcategorías, ajusta la opción "Categoría principal" a la categoría deseada.
+                Utiliza estas opciones para organizar y optimizar el contenido estático de tu tienda, mejorando tanto la experiencia de tus clientes como el SEO de tu sitio.</p><br>
+            <img src="./img/pg3.png" alt="" width="600">
+
+
+            <h3>Tema de Correo Electrónico</h3>
+            <h5>Guía de Usuario: Gestión de Temas de Correo y Contenido Estático en PrestaShop</h5>
+            <p>Los correos electrónicos son cruciales en el comercio electrónico para mantener una comunicación eficiente y relevante con tus clientes. A partir de la versión <b>1.7.6</b>, PrestaShop introdujo una página dedicada para gestionar los temas de correo electrónico.</p>
+            <h4>Nueva Funcionalidad en 1.7.6</h4>
+            <p>Antes, los correos se recuperaban directamente del servidor.</p>
+            <p>Ahora, los correos se generan desde esta nueva página o automáticamente al instalar tu tienda y/o un paquete de localización.</p>
+            <img src="./img/ma.png" alt="" width="600">
+            <h4>1.Configuración del Tema de Correo</h4>
+            <p>La página se divide en tres partes principales:
+            
+                Selección del Tema de Correo:
+                
+                Define el tema de correo por defecto. Existen dos plantillas nativas: Clásico y Moderno (disponibles desde la versión 1.7.6).
+                Selecciona una plantilla para que los correos futuros adopten ese diseño.</p>
+                <img src="./img/ma2.png" alt="" width="600">
+                <h4>2.Generar Correos:</h4>
+
+                <p>Elige el diseño y el idioma del correo electrónico.
+                Asegúrate de haber añadido el idioma deseado en la sección "Internacional".
+                Si necesitas sobrescribir correos de tu tema actual, activa la opción Sobrescribir plantillas.</p>
+
+            <h4>3.Acciones Disponibles en los Temas de Correo:</h4>
+            <p>Vista previa HTTP: Ver cómo se enviará el correo.</p>
+            <p>Código HTML: Visualiza el código HTML del correo.</p>
+            <p>Texto: Accede al formato de texto del correo.</p>
+            <p>Enviar un correo de prueba: Comprueba si el diseño es correcto.</p>
+        </div>
+        
+        <div id="modpos" class="section">
+            <h5>Guía de Usuario: Gestión de Módulos y Posiciones en PrestaShop</h5>
+            <h2>10. Posiciones y Módulos</h2>
+            <img src="./img/po.png" alt="" width="600">
+            <p>En PrestaShop, los módulos pueden tener dos vistas: una en el back office (para opciones o configuración) y otra en el front office, que es cómo se muestra el módulo en el tema de tu tienda.</p>
+            <h4>Transplantar Módulos y Cambiar Posiciones</h4>
+            <p>El transplante es el proceso de mover o asignar un módulo a un hook específico (un punto de inserción) en tu tema. Esto se gestiona desde la página "Posiciones" en el menú "Diseño" sin necesidad de escribir código.</p>
+        </div>
+        
+        <div id="posfront" class="section">
+         <h2 id="posfront">8. Posiciones en el Front Office</h2>
+         <p>En PrestaShop, los módulos pueden tener dos vistas: una en el back office (para opciones o configuración) y otra en el front office, que es cómo se muestra el módulo en el tema de tu tienda.</p>
+        
+         <h4>1.1. Transplantar Módulos y Cambiar Posiciones</h4>
+         <p><strong>¿Qué es el Transplante?</strong> El transplante es el proceso de mover o asignar un módulo a un hook específico (un punto de inserción) en tu tema. Esto se gestiona desde la página "Posiciones" en el menú "Diseño" sin necesidad de escribir código.</p>
+        
+         <h4>1.2. Mover un Módulo dentro de un Hook</h4>
+         <p><strong>Visualizar los Hooks y Módulos:</strong> La página "Posiciones" muestra los hooks disponibles y los módulos conectados. Usa el menú desplegable para buscar módulos específicos o marca la opción "Mostrar hooks no posicionables" para ver todos los hooks, incluso los invisibles.</p>
+         <p><strong>Ajustar el Orden de los Módulos:</strong></p>
+         <ul>
+             <li><strong>Con flechas:</strong> Haz clic para ajustar el orden, la página se recargará y mostrará la nueva posición.</li>
+             <li><strong>Arrastrar y soltar:</strong> Mueve el módulo a la posición deseada arrastrando y soltando.</li>
+         </ul>
+        
+         <h3>2. Transplantar un Módulo: Guía Paso a Paso</h3>
+         <ol>
+            <img src="./img/po1.png" alt="" width="600">
+             <li>Ve al menú "Diseño" y selecciona "Posiciones".</li>
+             <li>Haz clic en "Transplantar un módulo".</li>
+             <li>Selecciona el módulo en la lista desplegable.</li>
+             <li>Escoge el hook de destino.</li>
+             <li>Usa "Excepciones" para excluir ciertas páginas.</li>
+             <li>Guarda los cambios.</li>
+         </ol>
+         <p><strong>Notas Importantes:</strong></p>
+         <ul>
+             <li>Algunos módulos solo se pueden conectar a ciertos hooks.</li>
+             <li>Desactiva la caché cuando pruebes nuevos módulos.</li>
+         </ul>
+        
+         <h3>3. Editar o Eliminar Módulos de Hooks</h3>
+         <p><strong>Editar Módulos:</strong> Usa el botón de acción para ajustar la configuración.</p>
+         <p><strong>Eliminar Módulos:</strong> Haz clic en el icono de la papelera o selecciona varios módulos y elige "Desconectar la selección".</p>
+        
+         <h3>4. Transplantar Módulos Mediante Código (Para Expertos)</h3>
+         <p>Algunos módulos requieren modificaciones en su código para transplantarlos. Esto implica:</p>
+         <ul>
+             <li>Añadir la función PHP necesaria para el nuevo hook.</li>
+             <li>Adaptar el contenido de la función para la nueva posición.</li>
+         </ul>
+
+
+         <h2 id="configimg">9. Configuración de Imágenes en PrestaShop</h2>
+         <h4>9.1. Conceptos Básicos de las Imágenes</h4>
+         <p>La configuración de imágenes permite ajustar los tamaños mostrados en la tienda. No elimines configuraciones predeterminadas para evitar problemas.</p>
+        
+         <h4>6.2. Gestión de Imágenes y Redimensionamiento</h4>
+         <p>Sube una versión grande de la imagen, y PrestaShop generará automáticamente versiones más pequeñas.</p>
+         <h3 id="wid">10. Widgets en PrestaShop 1.7</h3>
+         <p>PrestaShop 1.7 introduce widgets que permiten mayor flexibilidad. Solo funcionan con módulos compatibles con 1.7.</p>
+         <p><strong>Consulta:</strong> <a href="https://devdocs.prestashop.com/1.7/modules/concepts/widgets"></a>Para más detalles sobre widgets, visita la documentación oficial de PrestaShop DevDocs.</p>         
+        
+         <div>
+            <h2 id="configimg">9. Configuración de Imágenes en PrestaShop</h2>
+            <h5>Configuración de Imágenes en PrestaShop</h5>
+            <h2>Conceptos Básicos de las Imágenes</h2>
+            <p>La página de "Configuración de Imágenes" en PrestaShop te permite ajustar los tamaños de las imágenes que tus clientes verán en tu tienda. Aunque PrestaShop ya viene con configuraciones predeterminadas, es crucial no eliminarlas, ya que son necesarias para el funcionamiento del sitio.</p>
+            <img src="./img/img.png" alt="" width="600">
+            <h4>Gestión de Imágenes y Redimensionamiento</h4>
+            <p>Cuando subes una imagen a PrestaShop, el sistema automáticamente genera múltiples versiones de esa imagen, como miniaturas y otras versiones de menor tamaño. Por eso, solo necesitas subir una versión "maestra" de la imagen, que sea suficientemente grande para que se pueda redimensionar.
+            
+                Consejo: Para asegurar que las imágenes se redimensionen correctamente sin dejar espacios en blanco, sube imágenes que respeten la relación de aspecto de las configuraciones predefinidas. Si el tamaño no coincide con el de las configuraciones, podrías ver espacios vacíos en las imágenes redimensionadas.</p>
+
+            <h4>Configuración y Tipos de Imágenes</h4>    
+            <p>Cuando añades un nuevo tema, este puede agregar automáticamente los tamaños de imágenes que necesita. Por defecto, la lista muestra los tamaños del tema Classic.
+
+                Añadir un Nuevo Tipo de Imagen
+                Haz clic en "Añadir un nuevo tipo de imagen".
+                Define el nombre, el ancho y la altura del nuevo tamaño.
+                Elige el tipo de contenido al que se aplicará.
+                Guarda los cambios.</p>
+                <img src="./img/img1.png" alt="" width="600">
+
+                <h4>Preferencias de Formato de Imagen</h4>
+                <p>Formato de Imagen: Puedes elegir entre JPEG y PNG.
+
+                    JPEG: Ofrece una buena relación de compresión pero puede mostrar artefactos visibles.
+                    PNG: Menos artefactos visibles pero peor compresión.
+                    Recomendación: Usa JPEG a menos que prefieras mantener la calidad de las imágenes en formato PNG.
+                    Compresión de JPEG: No configures la compresión por debajo de 80, o 75 como mínimo, para evitar artefactos visibles.
+                    
+                    Compresión de PNG: No ajustes la compresión por encima de 6, o como máximo 7, para evitar perder calidad.</p>
+                    <img src="./img/img3.png" alt="" width="600">
+                    <h4>Generación de Imágenes Basada en un Lado</h4>
+                <p>Puedes definir cómo se posicionará la imagen en su espacio asignado:
+
+                    Altura: Ajusta la imagen a la altura del marco, recalculando el ancho para mantener la proporción.
+                    Ancho: Ajusta la imagen al ancho del marco, recalculando la altura.
+                    </p>
+
+                    <h4>Tamaño Máximo de Archivos para Imágenes de Personalización</h4>
+                    <p>Los clientes pueden subir imágenes personalizadas para productos. El tamaño máximo por defecto es el que permite la configuración máxima de PHP, que suele ser varios megabytes (por ejemplo, 8 Mb o 8,388,608 bytes). Si necesitas ajustar este valor, asegúrate de que tu instalación de PHP pueda manejar archivos de ese tamaño.
+
+                        Ancho Máximo de Imágenes de Producto: 64 píxeles por defecto.
+                        Altura Máxima de Imágenes de Producto: 64 píxeles por defecto.</p>
+
+                    <h4>Imágenes de Alta Resolución</h4>
+
+                    <p>Las pantallas modernas con alta densidad de píxeles (como Retina) requieren imágenes de alta resolución. Puedes habilitar esta función para que las imágenes se vean nítidas. Esto generará un archivo adicional con resolución duplicada para cada imagen, lo que puede duplicar la cantidad de archivos de imagen. Usa esta función con precaución si tienes espacio de almacenamiento limitado.</p>
+                    <h4>Regenerar Miniaturas</h4>
+                    <p>Si no estás satisfecho con el tamaño de las miniaturas actuales, puedes regenerarlas:
+
+                        Cambia la configuración de tamaño de imagen en la tabla superior de la página de preferencias de "Imágenes".
+                        Selecciona qué imágenes deseas regenerar.
+                        Decide si deseas conservar las miniaturas anteriores.
+                        Haz clic en "Regenerar miniaturas".
+                        Nota: Las miniaturas subidas manualmente se sobrescribirán y se reemplazarán por las miniaturas generadas automáticamente.
+                        
+                        Esta guía te ayudará a ajustar y optimizar las imágenes en tu tienda PrestaShop, garantizando que se vean perfectas para todos tus clientes.</p>
+
+
+         </div>
+         <div>
+            <h2 id="wid">Widgets en PrestaShop 1.7</h2>
+            <h5>Gestión de Enlaces con el Widget de Enlaces en PrestaShop</h5>
+            <h2>Enlaces con el Widget</h2>
+            <h4>Introducción al Módulo "Link list"</h4>
+            <p>La página del Link Widget está vinculada al módulo "Lista de enlaces", que te permite gestionar los diferentes enlaces y bloques de enlaces disponibles en tu tienda. Este módulo funciona mediante bloques que se asocian a hooks, proporcionando enlaces a tus páginas estáticas (aquellas que se encuentran en la sección de "Páginas").
+                
+                Es importante familiarizarse con el concepto de hooks antes de realizar modificaciones, ya que este módulo está estrechamente relacionado con ellos.</p>
+                <img src="./img/w.png" alt="" width="600">
+            <h4>Configuración Predeterminada</h4>
+            <p>Si todavía usas el tema predeterminado Classic, tendrás un bloque de enlaces en el pie de página (footer) que incluye dos bloques secundarios: "Productos" y "Nuestra empresa". Estos representan las dos primeras columnas de enlaces visibles en el pie de tu tienda. Los nombres de los bloques son los títulos de estas columnas.</p>
+            <h4>Gestión de Bloques</h4>
+            <p>Dentro de un bloque principal, puedes realizar varias acciones:
+
+                Ordenar Bloques: Cambia la posición de un bloque arrastrando y soltando su fila.
+                Editar un Bloque: Al hacer clic en "Editar", se abrirá una nueva pantalla donde podrás ver los enlaces de página activos para cada bloque (marcados con una marca de verificación) y el hook al que están asociados.
+                Eliminar un Bloque: Utiliza el botón de acción ubicado a la derecha de una fila para eliminar un bloque.</p>
+            <h4>Crear un Nuevo Bloque de Enlaces</h4>
+            <p>Si deseas añadir un nuevo conjunto de enlaces en tu tienda, sigue estos pasos:
+
+                Haz clic en "Nuevo bloque".
+                <img src="./img/w1.png" alt="" width="600">
+                Se abrirá un formulario de creación que deberás completar:
+                
+                Nombre del Bloque de Enlaces: Este será el título del bloque de enlaces tal como aparecerá en tu tienda. Asegúrate de que sea sencillo y claro.
+                Hook: Selecciona el hook al que el bloque debe estar asociado. Se mostrarán todos los hooks disponibles.
+                Enlaces de Páginas: Se mostrarán diferentes secciones con las páginas disponibles para crear enlaces. Puedes seleccionar cada página individualmente o elegir un grupo completo marcando la casilla de verificación junto al nombre de la sección.</p>
+                <img src="./img/w2.png" alt="" width="150">
+            <h4>Secciones Predeterminadas de Enlaces</h4>
+            <p>Páginas de Contenido - Inicio: Contiene todas las páginas bajo la categoría de inicio.
+                Páginas de Productos: Incluye páginas que muestran productos nuevos o con descuentos.
+                Contenido Estático: Páginas estáticas vinculadas a tu tema.
+                Si tienes otras categorías de páginas, aparecerán con las páginas que contienen.</p>
+
+            <h4>Añadir Enlaces Personalizados</h4>
+            <p>También puedes agregar enlaces personalizados completando los siguientes campos:
+
+                Título: Introduce el título del enlace que deseas mostrar.
+                URL: Especifica la URL del enlace.
+                Una vez que hayas hecho tu selección de páginas, haz clic en "Guardar". El nuevo bloque aparecerá en la página principal del módulo.
+                Con estas opciones, puedes personalizar y organizar los enlaces de tu tienda de manera eficiente, asegurando que tus clientes tengan fácil acceso a las páginas más importantes.</p>
+
+         </div>
+</body>
+</html>
+
 
 </body>
 </html>
