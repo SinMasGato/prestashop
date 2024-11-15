@@ -1,10 +1,10 @@
 # Mi Página Web
 
-¡Bienvenido a mi página web alojada en GitHub Pages!
+¡Bienvenido a mi página web para la documentación de PrestaShop!
 
 ## Descripción
 
-Este proyecto es un simple ejemplo de una página web en HTML que se puede ver en línea gracias a [GitHub Pages](https://pages.github.com/). La página incluye un encabezado y un párrafo con un mensaje de bienvenida.
+ PrestaShop es una plataforma de comercio electrónico de código abierto que permite crear y gestionar tiendas online. Este manual te guiará a través de los aspectos fundamentales del sistema.
 
 ## Contenidos
 
@@ -14,7 +14,7 @@ El repositorio contiene el siguiente archivo:
 ## Cómo ver la página
 
 Puedes visitar la página en el siguiente enlace:
-[- [https://tu-usuario.github.io/mi-pagina-web](https://tu-usuario.github.io/mi-pagina-web)](https://github.com/SinMasGato/prestashop.git)
+(https://github.com/SinMasGato/prestashop.git)
 
 ## Tecnologías usadas
 
